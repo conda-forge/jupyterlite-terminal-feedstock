@@ -19,13 +19,13 @@ requirements:
     - python {{ python_min }}
     - hatchling >=1.5.0
     - jupyterlab >=4.0.0,<5
-    - jupyterlite-core >=0.6,<0.7
+    - jupyterlite-core >=0.6,<0.8
     - hatch-jupyter-builder >=0.5
     - hatch-nodejs-version >=0.3.2
     - pip
   run:
     - python >={{ python_min }}
-    - jupyterlite-core >=0.6,<0.7
+    - jupyterlite-core >=0.6,<0.8.0
 
 test:
   imports:
