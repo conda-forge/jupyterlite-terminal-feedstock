@@ -1,5 +1,5 @@
 {% set name = "jupyterlite-terminal" %}
-{% set version = "1.4.1" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jupyterlite_terminal-{{ version }}.tar.gz
-  sha256: 076974c27fa153fb2f859174c5b68fd0daecc42a2d0c1fe21300cce24156fc7c
+  sha256: c5ec25f4eedcfaaa55fff0dba9ccf9cebb54a0b192b2778297b5774a8d3a62ae
 
 build:
   noarch: python
