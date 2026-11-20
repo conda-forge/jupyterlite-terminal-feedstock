@@ -1,5 +1,5 @@
 {% set name = "jupyterlite-terminal" %}
-{% set version = "1.7.1" %}
+{% set version = "1.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/jupyterlite_terminal-{{ version }}.tar.gz
-  sha256: 4b483d97242f886f33169fda761d10b062f38857955ce64336eb02caf11d617e
+  sha256: efa07b0f77330546d6e6f28b66f7d2fb7a13c64e5df533476a614453a28d127f
 
 build:
   noarch: python
@@ -19,13 +19,13 @@ requirements:
     - python {{ python_min }}
     - hatchling >=1.5.0
     - jupyterlab >=4.0.0,<5
-    - jupyterlite-core >=0.7,<0.9,!=0.7.4,!=0.7.5
+    - jupyterlite-core >=0.8,<0.9
     - hatch-jupyter-builder >=0.5
     - hatch-nodejs-version >=0.3.2
     - pip
   run:
     - python >={{ python_min }}
-    - jupyterlite-core >=0.7,<0.9.0,!=0.7.4,!=0.7.5
+    - jupyterlite-core >=0.8,<0.9
 
 test:
   imports:
